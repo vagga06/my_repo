@@ -1,0 +1,103 @@
+Hi, KPMG-grunt issues --how to resolve 
+hello
+
+1.npm install grunt
+2.npm install grunt-cli
+3.npm install
+4.grunt build
+
+SVN issues:
+--error during authrntication
+Solution :- svn co <url> --username="" password=""
+
+Day-Cq:
+workflow model is changing in update_asset_kpmg.html means
+naviagte to respective pom.xml and comment
+<--<model>replace</mode>-->
+
+
++------------+-----------------------------------------+
+      |  Arguments | Comment                                 |
+      +------------+-----------------------------------------+
+      |  cmd=help  | print this help                         |
+      +------------+-----------------------------------------+
+      |  cmd=ls    | print a list of all packages            |
+      +------------+-----------------------------------------+
+      |  cmd=rm    | remove a  package                       |
+      |  name      | package name                            |
+      |  [group]   | group name (optional)                   |
+      +------------+-----------------------------------------+
+      |  cmd=build | build a  package                        |
+      |  name      | package name                            |
+      |  [group]   | group name (optional)                   |
+      +------------+-----------------------------------------+
+      |  cmd=inst  | install a package                       |
+      |  name      | package name                            |
+      |  [group]   | group name (optional)                   |
+      +------------+-----------------------------------------+
+      |  cmd=uninst| uninstall a package                     |
+      |  name      | package name                            |
+      |  [group]   | group name (optional)                   |
+      +------------+-----------------------------------------+
+      |  GET       | download a package                      |
+      |            | (content-disposition header contains    |
+      |            | the correct filename)                   |
+      |  [cmd=get] | optional                                |
+      |  name      | package name                            |
+      |  [group]   | group name (optional)                   |
+      +------------+-----------------------------------------+
+      |  POST      | upload a new package                    |
+      |  file      | package to upload                       |
+      |  [name]    | optional name                           |
+      |  [install] | automatically install package if 'true' |
+      +------------+-----------------------------------------+
+
+
+
+
+
+
+root user will login
+
+
+
+tar -cvzf kpmg.tar.gz /app/solr/kpmg
+
+scp 
+
+qa
+service jboss stop 
+
+mv kpmg kpmg_ddate
+
+tar -xvzf /app/solr/
+
+
+service jboss start
+
+root... kpmg#123
+========================
+
+service jboss stop
+
+sleep 5
+
+mv /app/solr/kpmg /app/solr/backup/kpmg_`date +%d%b%Y`
+
+tar -xvzf /app/solr/kpmg.tar.gz
+
+service jboss start
+
+
+
+
+
+====================original
+cd /app/solr/kpmg
+
+tar -czvf solr.tar.gz solr
+
+scp /app/solr/kpmg/solr.tar.gz root@10.209.5.209:/app/solr/kpmg
+
+mv /app/solr/kpmg/solr.tar.gz /app/solr/backup/solr_`date +%d%b%Y`.tar.gz
+
